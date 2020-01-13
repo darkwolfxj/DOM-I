@@ -61,8 +61,11 @@ document.querySelector('nav').appendChild(links);
 let wholenav = Array.from(document.querySelectorAll('nav a'));
 console.log(wholenav);
 wholenav.forEach((a)=> a.style.color='green');
+
 //cta
 document.querySelector('.cta .cta-text h1').textContent=siteContent.cta["h1"];
+let h1 = document.querySelector('.cta .cta-text h1');
+h1.style.color='red';
 document.querySelector('.cta button').textContent=siteContent.cta["button"];
 document.querySelector('.cta img').src=siteContent.cta["img-src"];
 
@@ -71,17 +74,23 @@ document.querySelector('.main-content .top-content .text-content h4').textConten
 document.querySelector('.main-content .top-content .text-content p').textContent=siteContent["main-content"]["features-content"];
 document.querySelector('.main-content .top-content .text-content:nth-child(2) h4').textContent=siteContent["main-content"]["about-h4"];
 document.querySelector('.main-content .top-content .text-content:nth-child(2) p').textContent=siteContent["main-content"]["about-content"];
+
 //main content:middle image
-document.querySelector('.middle-img').src=siteContent["main-content"]["middle-img-src"]
+document.querySelector('.middle-img').src=siteContent["main-content"]["middle-img-src"];
+let midImg = document.querySelector('.middle-img');
+midImg.style.borderRadius='10px';
+
 //main content:bottom content
 document.querySelector('.main-content .bottom-content .text-content h4').textContent=siteContent["main-content"]["services-h4"];
 document.querySelector('.main-content .bottom-content .text-content p').textContent=siteContent["main-content"]["services-content"];
 document.querySelector('.main-content .bottom-content .text-content:nth-child(2) h4').textContent=siteContent["main-content"]["vision-h4"];
 document.querySelector('.main-content .bottom-content .text-content:nth-child(2) p').textContent=siteContent["main-content"]["vision-content"];
+
 //contact
 document.querySelector('.contact h4').textContent=siteContent.contact["contact-h4"];
 document.querySelector('.contact p').textContent=siteContent.contact.address;
 document.querySelector('.contact p:nth-child(3)').textContent=siteContent.contact.phone;
 document.querySelector('.contact p:nth-child(4)').textContent=siteContent.contact.email;
+
 //footer
 document.querySelector('.container footer p').textContent=siteContent.footer.copyright;
