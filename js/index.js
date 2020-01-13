@@ -49,7 +49,18 @@ thenav[2].textContent=siteContent.nav["nav-item-3"];
 thenav[3].textContent=siteContent.nav["nav-item-4"];
 thenav[4].textContent=siteContent.nav["nav-item-5"];
 thenav[5].textContent=siteContent.nav["nav-item-6"];
-
+let too = document.createElement("a");
+too.textContent="Too";
+document.querySelector('nav').appendChild(too);
+let many = document.createElement("a");
+many.textContent="many";
+document.querySelector('nav').appendChild(many);
+let links = document.createElement("a");
+links.textContent="links";
+document.querySelector('nav').appendChild(links);
+let wholenav = Array.from(document.querySelectorAll('nav a'));
+console.log(wholenav);
+wholenav.forEach((a)=> a.style.color='green');
 //cta
 document.querySelector('.cta .cta-text h1').textContent=siteContent.cta["h1"];
 document.querySelector('.cta button').textContent=siteContent.cta["button"];
